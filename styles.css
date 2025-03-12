@@ -1,0 +1,254 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-start;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    color: #dc3545;  /* Red color for links on hover */
+}
+
+h1 {
+    color: #dc3545;  /* Red color for main heading */
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin: 20px 0;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+/* Style for email links */
+.contact-info a {
+    color: #0366d6;  /* GitHub-style blue for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.bio {
+    margin: 20px 0;
+}
+
+blockquote {
+    background-color: #f8f9fa;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Update the research areas text to maintain emphasis */
+blockquote p span.highlight {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+/* Style for red text highlights */
+.highlight {
+    color: #dc3545;
+}
+
+/* Style for links */
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for research questions */
+ol li {
+    margin-bottom: 10px;
+}
+
+/* Add a container for the profile image and bio */
+.profile-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.profile-section {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 350px;
+}
+
+.profile-image {
+    width: 350px;
+    height: 420px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    object-fit: cover;
+    border: 1px solid #dee2e6;
+}
+
+.contact-info {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-section {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .profile-image {
+        width: 350px;
+        height: 467px;
+    }
+}
+
+/* Additional styles for new sections */
+.section {
+    margin: 40px 0;
+}
+
+h2 {
+    color: #dc3545;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.education-item, .project-item {
+    margin-bottom: 25px;
+}
+
+#awards ul {
+    list-style-type: none;
+    margin-left: 0;
+}
+
+#awards li {
+    padding-left: 20px;
+    position: relative;
+}
+
+#awards li:before {
+    content: "•";
+    color: #dc3545;
+    position: absolute;
+    left: 0;
+}
+
+.research-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+.research-item h3 {
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.research-item p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+blockquote ol {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+blockquote ol li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+} 
